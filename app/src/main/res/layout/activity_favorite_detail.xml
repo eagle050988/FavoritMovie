@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteDetail">
+    <ImageView
+    android:id="@+id/item_backdrop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="TODO"
+    android:scaleType="centerCrop"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_starr"
+        app:layout_constraintBottom_toBottomOf="@+id/item_vote"
+        app:layout_constraintEnd_toStartOf="@+id/item_vote"
+        app:layout_constraintTop_toTopOf="@+id/item_vote"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/item_vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="6.0" />
+
+
+    <ImageView
+        android:id="@+id/item_poster"
+        android:layout_width="186dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/item_backdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/item_poster"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        tools:text="Movie Title" />
+
+    <TextView
+        android:id="@+id/item_date_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/item_backdrop"
+        app:layout_constraintEnd_toEndOf="@+id/item_backdrop"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/item_poster"
+        app:layout_constraintTop_toBottomOf="@+id/item_title"
+        app:layout_constraintVertical_bias="0.016"
+        tools:text="Date Release" />
+
+    <TextView
+        android:id="@+id/tvoverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/item_backdrop"
+        app:layout_constraintEnd_toEndOf="@+id/item_backdrop"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsinopsis"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/tvsinopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/sinopsis"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/item_backdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="@+id/item_backdrop"
+        app:layout_constraintTop_toBottomOf="@+id/item_poster"
+        app:layout_constraintVertical_bias="0.067" />
+</android.support.constraint.ConstraintLayout>
